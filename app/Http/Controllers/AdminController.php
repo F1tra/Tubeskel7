@@ -18,4 +18,17 @@ class AdminController extends Controller
       ;
         return view ('admin.tambah');
     }
+    public function simpan(request $ambil){
+      dd($ambil);
+        // $simpan = Admin::create([
+        //     'id_admin' =>$request->id_admin,
+        //     'username' =>$request->username,
+        //     'password' => $request->password,
+        //     'admin_level' => $request->admin_level,
+        //     'admin_nama' => $request->admin_nama,
+        //     'admin_status' => $request->admin_status
+            
+        // ]);
+        //   return redirect ('admin');
+      }
 }

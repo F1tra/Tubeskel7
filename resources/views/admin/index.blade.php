@@ -2,11 +2,11 @@
 
                                 @section('content')
                                 <div class="card-header">
-                                    <h3 class="card-title">Tambah data Admin</h3>
+                                    <h3 class="card-title">Tampil data Admin</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <a href="" class="btn btn-primary">Tambah</a>
+                                    <a href="admin/tambah" class="btn btn-primary">Tambah</a>
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>

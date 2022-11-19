@@ -24,3 +24,4 @@ Route::get('/', function () {
 
 Route::get('/admin' , [AdminController::class, 'index']);
 Route::get('/admin/tambah' , [AdminController::class, 'tambah']);  
+Route::post('/admin/simpan' , [AdminController::class, 'simpan']);  
