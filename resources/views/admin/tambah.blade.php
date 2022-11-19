@@ -2,42 +2,45 @@
 @section('content')
 <div class="card card-primary">
     <div class="card-header">
-        <h3 class="card-title">Quick Example</h3>
+        <h3 class="card-title">Tambah Data Admin</h3>
     </div>
     <!-- /.card-header -->
     <!-- form start -->
-    <form>
+    <form method="POST" action="/admin/simpan">
+        @csrf
         <div class="card-body">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <label for="">Id Admin</label>
+                <input type="text" name="id_admin" class="form-control" id="" placeholder="">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="">Id Username</label>
+                <input type="text" name="username" class="form-control" id="" placeholder="">
             </div>
             <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <div class="input-group">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                    </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                    </div>
-                </div>
+                <label for="">Password</label>
+                <input type="text" name="password" class="form-control" id="" placeholder="">
             </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-group">
+                <label for="">Admin Level</label>
+                <input type="text" name="admin_level" class="form-control" id="" placeholder="">
             </div>
+            <div class="form-group">
+                <label for="">Admin Nama</label>
+                <input type="text" name="admin_nama" class="form-control" id="" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="">Admin Status</label>
+                <input type="text" name="admin_status" class="form-control" id="" placeholder="">
+            </div>
+
         </div>
         <!-- /.card-body -->
-
         <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <input type="submit" class="btn btn-primary" value="simpan">
         </div>
-    </form>
 </div>
+</form>
+</div>
+
 @endsection
